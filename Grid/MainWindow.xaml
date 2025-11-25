@@ -7,21 +7,6 @@
         mc:Ignorable="d"
         Title="Wpf Grid" Height="450" Width="800">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
-            <RowDefinition />
-            <RowDefinition  Height="25"/>
-        </Grid.RowDefinitions>
-        <Grid Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="100"/>
-                <ColumnDefinition Width=".6*"/>
-                <ColumnDefinition Width=".2*"/>
-            </Grid.ColumnDefinitions>
-            <Rectangle Fill="Green"/>
-            <Rectangle Grid.Column="1" Fill="LightGray"/>
-            <Rectangle Grid.Column="2" Fill="Gray"/>
-        </Grid>
-        <Rectangle Grid.Row="0" Fill="DarkBlue"/>
+        
     </Grid>
 </Window>
