@@ -21,14 +21,13 @@ namespace CustomTextboxControl.View.UserControls
 	public partial class ClearableTextBox : UserControl
 	{
 
-		private string Placeholder;
+		private string placeholder;
 
-		public string placeholder
+		public string Placeholder
 		{
-			get { return Placeholder; }
-			set { Placeholder = tbPlaceholder.Text = value; }
+			get { return placeholder; }
+			set { placeholder = tbPlaceholder.Text = value; }
 		}
-
 
 		public ClearableTextBox()
 		{
@@ -45,6 +44,16 @@ namespace CustomTextboxControl.View.UserControls
 		private void btnClear_Click(object sender, RoutedEventArgs e)
 		{
 			txtInput.Text = "";
+		}
+
+		private void txtInput_KeyDown(object sender, KeyEventArgs e)
+		{
+			if (e.Key == Key.Enter)
+			{
+				Window window = Window.GetWindow(this);
+
+
+			}
 		}
 	}
 }
