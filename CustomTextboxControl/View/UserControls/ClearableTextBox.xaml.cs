@@ -37,8 +37,6 @@ namespace CustomTextboxControl.View.UserControls
 		private void txtInput_TextChanged(object sender, TextChangedEventArgs e)
 		{
 			tbPlaceholder.Visibility = txtInput.Text == "" ? Visibility.Visible : Visibility.Hidden;
-		//	if(txtInput.Text.Length > 16) Window.GetWindow(this).Focus();
-		//	if(txtInput.Text.Length > 16)txtInput.Text = txtInput.Text.Substring(0, 16);
         }
 
 		private void btnClear_Click(object sender, RoutedEventArgs e)
@@ -50,9 +48,7 @@ namespace CustomTextboxControl.View.UserControls
 		{
 			if (e.Key == Key.Enter)
 			{
-				Window window = Window.GetWindow(this);
 				Console.WriteLine("in clearable");
-
 			}
 		}
 	}
