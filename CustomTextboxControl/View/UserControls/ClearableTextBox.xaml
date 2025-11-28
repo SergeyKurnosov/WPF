@@ -11,7 +11,7 @@
     <Grid Background="AliceBlue">
         <TextBox Name="txtInput" VerticalContentAlignment="Center" Background="Transparent"
                  TextChanged="txtInput_TextChanged"
-                 KeyDown="txtInput_KeyDown"
+                 KeyDown="txtInput_KeyDown" ForceCursor="True"
                  />
         <TextBlock Name="tbPlaceholder" Text="Placeholder"
                    FontWeight="Light" Foreground="DarkGray" 

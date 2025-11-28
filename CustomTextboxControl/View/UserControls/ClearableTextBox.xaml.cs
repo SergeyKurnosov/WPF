@@ -51,7 +51,7 @@ namespace CustomTextboxControl.View.UserControls
 			if (e.Key == Key.Enter)
 			{
 				Window window = Window.GetWindow(this);
-
+				Console.WriteLine("in clearable");
 
 			}
 		}
