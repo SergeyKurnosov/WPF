@@ -1,0 +1,22 @@
+﻿<Window x:Class="TextEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextEditor"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Menu FontSize="15" Width="120" Height="50" Margin="10,10,675,374">
+            <MenuItem Header="Create/Open">
+                <MenuItem Name="create_" Header="Create new" Click="MenuItem_Click_Create" />
+                <Separator />
+                <MenuItem Name="open_" Header="Open exist" Click="MenuItem_Click_Open"/>
+                <Separator />
+                <MenuItem Name="save_" Header="Save current" Click="MenuItem_Click_Save" IsEnabled="False"/>
+            </MenuItem>
+        </Menu>
+        <TextBox Name="field_text" HorizontalAlignment="Center" Margin="0,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="780" Height="359" AcceptsReturn="True" KeyDown="field_text_KeyDown" MouseWheel="field_text_MouseWheel"/>
+
+    </Grid>
+</Window>
